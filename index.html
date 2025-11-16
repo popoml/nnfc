@@ -1,195 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>★★★★★ 老王の农家乐官方网站【全村の希望】★★★★★</title>
-    
-    <!-- 所有的样式都放在这里 -->
-    <style>
-        /* 虽然90年代的网站不怎么用CSS，但我们还是可以象征性地写一点 */
-        body {
-            font-family: '宋体', 'SimSun', serif; /* 经典宋体 */
-            font-size: 16px;
-            /* 加一个从网上找的、闪闪发光的鼠标指针！灵魂！ */
-            cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym46.cur'), auto !important;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土味情话大全 - 老铁双击666</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        // 自定义Tailwind配置
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tuwei: {
+                            red: '#FF2442',
+                            yellow: '#FFD500',
+                            green: '#36D399',
+                            blue: '#0096FF',
+                            pink: '#FF69B4',
+                            purple: '#9333EA',
+                        },
+                    },
+                    animation: {
+                        'flash': 'flash 1s infinite',
+                        'shake': 'shake 0.5s infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                        'marquee': 'marquee 15s linear infinite',
+                    },
+                    keyframes: {
+                        flash: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.5 },
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '25%': { transform: 'translateX(-5px)' },
+                            '75%': { transform: 'translateX(5px)' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
         }
-
-        h2 {
-            color: #FF69B4; /* 死亡芭比粉 */
-            text-align: center;
-            font-family: '隶书', 'LiSu', serif;
-            font-size: 28px;
-        }
-
-        h3 {
-            color: #00BFFF; /* 深天蓝色 */
-            border-bottom: 2px dashed #FFFF00;
-        }
-
-        a {
-            text-decoration: none; /* 去掉下划线 */
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #FF0000; /* 鼠标悬停变红色 */
-            text-decoration: underline; /* 悬停时出现下划线 */
-        }
-
-        .sidebar-box {
-            border: 2px solid #FF1493;
-            padding: 10px;
-            background-color: #000;
-            color: #FFFFFF;
-        }
-
-        .quote {
-            border: 3px dotted #FFD700;
-            background-color: #111;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            color: #ADFF2F; /* 绿黄色 */
-        }
-
-        /* 模拟 Blink 标签效果，因为现代浏览器已经不支持 <blink> */
-        blink, .blink {
-            animation: blinker 0.8s linear infinite;
-        }
-
-        @keyframes blinker {
-            50% {
-                opacity: 0;
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .text-shadow-glow {
+                text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+            }
+            .bg-gradient-tuwei {
+                background: linear-gradient(45deg, #FF2442, #FFD500, #36D399, #0096FF, #FF69B4, #9333EA);
+                background-size: 600% 600%;
+                animation: gradientAnimation 15s ease infinite;
+            }
+            .border-dashed-animated {
+                background-image: linear-gradient(to right, #FF2442 50%, transparent 50%);
+                background-size: 20px 2px;
+                background-repeat: repeat-x;
+                animation: dash 1s linear infinite;
+            }
+            @keyframes gradientAnimation {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            @keyframes dash {
+                to { background-position: 20px 0; }
             }
         }
     </style>
 </head>
+<body class="bg-gradient-tuwei min-h-screen font-sans text-white overflow-x-hidden">
+    <!-- 顶部滚动条 -->
+    <div class="w-full h-6 bg-black bg-opacity-80 flex items-center overflow-hidden">
+        <div class="animate-marquee whitespace-nowrap text-tuwei-yellow font-bold text-sm">
+            <span class="mx-4">🔥 老铁双击666 🔥</span>
+            <span class="mx-4">💘 土味情话天天有 💘</span>
+            <span class="mx-4">🎉 关注不迷路 🎉</span>
+            <span class="mx-4">❤️ 点赞富三代 ❤️</span>
+            <span class="mx-4">🚀 评论美一生 🚀</span>
+        </div>
+    </div>
 
-<!-- 一个合格的土味网站，背景图必须是平铺的闪亮GIF -->
-<body background="https://www.fg-a.com/backgrounds/black-silver-animated-rain.gif" text="#FFFF00" link="#00FF00" vlink="#FF00FF">
+    <!-- 头部 -->
+    <header class="py-8 px-4 text-center relative">
+        <div class="absolute -top-10 left-0 w-full h-20 bg-black bg-opacity-30 -skew-y-3"></div>
+        <h1 class="text-4xl md:text-6xl font-black text-tuwei-yellow text-shadow-glow mb-2 animate-bounce-slow">
+            土味情话大全
+        </h1>
+        <p class="text-xl md:text-2xl font-bold text-tuwei-pink animate-flash">
+            不土不时尚，越土越真香！
+        </p>
+        <div class="mt-6 flex justify-center space-x-4">
+            <button class="bg-tuwei-red hover:bg-tuwei-red/80 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center">
+                <i class="fa fa-heart mr-2 animate-pulse"></i> 双击点赞
+            </button>
+            <button class="bg-tuwei-blue hover:bg-tuwei-blue/80 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center">
+                <i class="fa fa-star mr-2 animate-spin-slow"></i> 关注主播
+            </button>
+        </div>
+    </header>
 
-    <!-- 
-      自动播放的背景音乐，灵魂所在！
-      注意: 大部分现代浏览器会默认阻止音乐自动播放，用户需要与页面交互（如点击一下）后才可能播放。
-      这里用了一个网络上找到的《两只蝴蝶》的链接作为示例。
-    -->
-    <embed src="https://www.myinstants.com/media/sounds/er-hu-liang-zhi-hu-die.mp3" autostart="true" loop="true" hidden="true"></embed>
-
-    <!-- 使用古老的 table 布局，居中显示 -->
-    <table width="800" border="3" align="center" cellpadding="10" cellspacing="5" bordercolor="#00FF00">
-        <!-- 网站头部：必须是滚动+闪烁的标题 -->
-        <thead>
-            <tr>
-                <td colspan="2" bgcolor="#FF0000">
-                    <marquee behavior="scroll" direction="left" scrollamount="5">
-                        <font size="6" color="#FFFF00">
-                            <b><blink>★★★ 热烈欢迎光临老王农家乐--全村的希望，致富的榜样！ ★★★</blink></b>
-                        </font>
-                    </marquee>
-                </td>
-            </tr>
-        </thead>
-
-        <!-- 导航栏 -->
-        <tr align="center">
-            <td colspan="2" bgcolor="#00008B">
-                <font size="5">
-                    <a href="#">网站首页</a> |
-                    <a href="#">关于我们</a> |
-                    <a href="#">产品展示</a> |
-                    <a href="#">在线留言</a> |
-                    <a href="#">联系我们</a>
-                </font>
-            </td>
-        </tr>
-
-        <!-- 主要内容区域 -->
-        <tr>
-            <!-- 左侧边栏 -->
-            <td width="25%" valign="top" bgcolor="#333333">
-                <div class="sidebar-box">
-                    <img src="https://i.gifer.com/origin/d7/d7ac4f38b77abe73165b5368686e358c_w200.gif" width="20">
-                    <font color="red" size="4">最新公告</font>
-                    <img src="https://i.gifer.com/origin/d7/d7ac4f38b77abe73165b5368686e358c_w200.gif" width="20">
-                    <hr>
-                    <!-- 上下滚动的公告栏 -->
-                    <marquee direction="up" height="150" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
-                        <p>1. 本农庄被评为“村级优秀企业”！</p>
-                        <p>2. 特价活动！草鸡蛋买一斤送一斤！</p>
-                        <p>3. 周末来玩，送神秘大礼包！</p>
-                        <p>4. 网站新上线，多多关照家人们！</p>
-                    </marquee>
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 pb-20">
+        <!-- 土味情话轮播 -->
+        <section class="mb-16">
+            <div class="bg-black bg-opacity-60 rounded-2xl p-6 md:p-10 backdrop-blur-sm border-4 border-tuwei-yellow shadow-xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-tuwei-green animate-flash">
+                    <i class="fa fa-heart text-tuwei-red"></i> 每日土味情话 <i class="fa fa-heart text-tuwei-red"></i>
+                </h2>
+                <div id="love-quote" class="text-xl md:text-2xl text-center min-h-[100px] flex items-center justify-center px-4 py-8 rounded-xl bg-white bg-opacity-10">
+                    你知道我最喜欢吃什么水果吗？是你这个开心果！
                 </div>
-                <br>
-                <div class="sidebar-box">
-                    <font color="#00FFFF" size="4">☆ 联系方式 ☆</font>
-                    <hr>
-                    <p>致富热线: 138-8888-8888</p>
-                    <p>在线Q Q: 12345678</p>
-                    <p>联系人: 王富贵 (村长)</p>
-                    <p>地址: 青山绿水村888号</p>
-                    <center>
-                        <!-- 旋转玫瑰GIF，经典中的经典 -->
-                        <img src="https://static.wixstatic.com/media/2a3780_44e66761161d43f68b0b6955a56d47d4~mv2.gif" alt="旋转玫瑰" width="100">
-                    </center>
+                <div class="flex justify-center mt-6">
+                    <button id="next-quote" class="bg-tuwei-purple hover:bg-tuwei-purple/80 text-white font-bold py-2 px-6 rounded-full shadow-md transform hover:scale-105 transition-all duration-300 animate-pulse">
+                        换一句 <i class="fa fa-refresh ml-2"></i>
+                    </button>
                 </div>
-            </td>
+            </div>
+        </section>
 
-            <!-- 右侧主内容 -->
-            <td width="75%" valign="top" bgcolor="#555555">
-                <!-- 闪光字 -->
-                <h2><img src="https://www.fg-a.com/gifs/3-d-blue-star.gif" width="30">欢迎家人们回家！<img src="https://www.fg-a.com/gifs/3-d-blue-star.gif" width="30"></h2>
-                <p>
-                    这里是老王农家乐的唯一官方指定网站！我们坐落于风景秀丽的青山绿水村，这里山好、水好、人更好！我们提供最纯正的农家土特产，最地道农家菜，是您周末休闲、体验田园生活的最佳选择！
-                </p>
+        <!-- 土味梗图 -->
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-tuwei-yellow text-shadow-glow">
+                <i class="fa fa-image text-tuwei-pink"></i> 土味名场面 <i class="fa fa-image text-tuwei-pink"></i>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 梗图1 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-red transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei1/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-yellow mb-2">人生没有彩排</h3>
+                        <p class="text-white/80">每一天都是现场直播，奥利给！</p>
+                    </div>
+                </div>
+                <!-- 梗图2 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-green transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei2/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-green mb-2">正道的光</h3>
+                        <p class="text-white/80">照在了大地上，把每个黑暗的地方全部都照亮</p>
+                    </div>
+                </div>
+                <!-- 梗图3 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-blue transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei3/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-blue mb-2">年轻人不讲武德</h3>
+                        <p class="text-white/80">耗子尾汁，好好反思！</p>
+                    </div>
+                </div>
+                <!-- 梗图4 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-pink transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei4/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-pink mb-2">双击666</h3>
+                        <p class="text-white/80">老铁没毛病，关注走一走，活到九十九</p>
+                    </div>
+                </div>
+                <!-- 梗图5 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-purple transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei5/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-purple mb-2">社会很单纯</h3>
+                        <p class="text-white/80">复杂的是人，谁把谁当真</p>
+                    </div>
+                </div>
+                <!-- 梗图6 -->
+                <div class="bg-black bg-opacity-60 rounded-xl overflow-hidden border-2 border-tuwei-yellow transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img src="https://picsum.photos/seed/tuwei6/600/400" alt="土味名场面" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-tuwei-yellow mb-2">干就完了</h3>
+                        <p class="text-white/80">别想太多，奥利给，干就完了！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <h3>我们的拳头产品</h3>
-                <center>
-                    <table border="1" cellpadding="5">
-                        <tr align="center">
-                            <td>
-                                <!-- 图片来自网络，边框必须鲜艳 -->
-                                <img src="https://img.zcool.cn/community/0168345c85b8c0a801208f8b7f8779.jpg@1280w_1l_2o_100sh.jpg" width="200" border="2" style="border-color: red;">
-                                <p><b>自家养的走地鸡 (活蹦乱跳)</b></p>
-                            </td>
-                            <td>
-                                <img src="https://t13.baidu.com/it/u=2221655138,2315876378&fm=224&app=112&f=JPEG?w=500&h=500" width="200" border="2" style="border-color: yellow;">
-                                <p><b>纯天然无公害蔬菜 (刚摘的)</b></p>
-                            </td>
-                        </tr>
-                    </table>
-                </center>
-                
-                <h3><blink>心灵鸡汤</blink></h3>
-                <p class="quote">
-                    <i>今天你对我爱答不理，明天我让你高攀不起！只要干不死，就往死里干！加油，陌生人！</i>
-                </p>
-            </td>
-        </tr>
+        <!-- 互动区域 -->
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-tuwei-green text-shadow-glow">
+                <i class="fa fa-handshake-o text-tuwei-red"></i> 老铁互动区 <i class="fa fa-handshake-o text-tuwei-red"></i>
+            </h2>
+            <div class="bg-black bg-opacity-60 rounded-2xl p-6 md:p-8 backdrop-blur-sm border-4 border-tuwei-blue shadow-xl">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="text-center">
+                        <div id="like-count" class="text-5xl font-black text-tuwei-yellow mb-2">666</div>
+                        <button id="like-btn" class="bg-tuwei-red hover:bg-tuwei-red/80 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center justify-center mx-auto">
+                            <i class="fa fa-thumbs-up mr-2"></i> 点赞
+                        </button>
+                    </div>
+                    <div class="h-20 md:h-32 w-px bg-white bg-opacity-30"></div>
+                    <div class="text-center">
+                        <div id="comment-count" class="text-5xl font-black text-tuwei-pink mb-2">88</div>
+                        <button id="comment-btn" class="bg-tuwei-blue hover:bg-tuwei-blue/80 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center justify-center mx-auto">
+                            <i class="fa fa-comment mr-2"></i> 评论
+                        </button>
+                    </div>
+                    <div class="h-20 md:h-32 w-px bg-white bg-opacity-30"></div>
+                    <div class="text-center">
+                        <div id="share-count" class="text-5xl font-black text-tuwei-green mb-2">99</div>
+                        <button id="share-btn" class="bg-tuwei-green hover:bg-tuwei-green/80 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center justify-center mx-auto">
+                            <i class="fa fa-share-alt mr-2"></i> 分享
+                        </button>
+                    </div>
+                </div>
 
-        <!-- 页脚 -->
-        <tfoot>
-            <tr>
-                <td colspan="2" align="center" bgcolor="#00008B">
-                    <p>版权所有 © 2005-2024 老王农家乐</p>
-                    <!-- 动态访客计数器 -->
-                    <p>您是本站第 <span id="visitor-count" style="color:red; font-weight:bold;">12345</span> 位尊贵的访客</p>
-                    <p>友情链接: <a href="#">青山村委会</a> | <a href="#">张大妈养猪场</a></p>
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+                <!-- 评论区 -->
+                <div id="comment-section" class="mt-10 hidden">
+                    <h3 class="text-xl font-bold text-tuwei-yellow mb-4">留下你的土味评论</h3>
+                    <textarea class="w-full h-32 p-4 rounded-xl bg-white bg-opacity-10 border-2 border-tuwei-pink text-white placeholder-white/60 focus:outline-none focus:border-tuwei-yellow resize-none" placeholder="老铁，留下你的神评论..."></textarea>
+                    <div class="mt-4 flex justify-end">
+                        <button class="bg-tuwei-pink hover:bg-tuwei-pink/80 text-white font-bold py-2 px-6 rounded-full shadow-md transform hover:scale-105 transition-all duration-300">
+                            发送评论 <i class="fa fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- 访客计数器脚本，让它看起来在动 -->
+        <!-- 土味语录 -->
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-tuwei-pink text-shadow-glow">
+                <i class="fa fa-quote-left text-tuwei-yellow"></i> 土味经典语录 <i class="fa fa-quote-right text-tuwei-yellow"></i>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-black bg-opacity-60 rounded-xl p-6 border-l-4 border-tuwei-red transform hover:translate-x-2 transition-all duration-300">
+                    <p class="text-lg italic">"人生就像打电话，不是你先挂，就是我先挂。"</p>
+                    <p class="text-right mt-2 text-tuwei-red font-bold">—— 土味哲学家</p>
+                </div>
+                <div class="bg-black bg-opacity-60 rounded-xl p-6 border-l-4 border-tuwei-green transform hover:translate-x-2 transition-all duration-300">
+                    <p class="text-lg italic">"天若有情天亦老，人若有情死得早。"</p>
+                    <p class="text-right mt-2 text-tuwei-green font-bold">—— 网络圣人</p>
+                </div>
+                <div class="bg-black bg-opacity-60 rounded-xl p-6 border-l-4 border-tuwei-blue transform hover:translate-x-2 transition-all duration-300">
+                    <p class="text-lg italic">"有钱男子汉，没钱汉子难。"</p>
+                    <p class="text-right mt-2 text-tuwei-blue font-bold">—— 社会人</p>
+                </div>
+                <div class="bg-black bg-opacity-60 rounded-xl p-6 border-l-4 border-tuwei-purple transform hover:translate-x-2 transition-all duration-300">
+                    <p class="text-lg italic">"只要思想不滑坡，办法总比困难多。"</p>
+                    <p class="text-right mt-2 text-tuwei-purple font-bold">—— 正能量大师</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="bg-black bg-opacity-80 py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-tuwei-red text-2xl hover:text-tuwei-yellow transition-colors duration-300 animate-bounce-slow">
+                    <i class="fa fa-weixin"></i>
+                </a>
+                <a href="#" class="text-tuwei-blue text-2xl hover:text-tuwei-green transition-colors duration-300 animate-bounce-slow" style="animation-delay: 0.5s">
+                    <i class="fa fa-weibo"></i>
+                </a>
+                <a href="#" class="text-tuwei-pink text-2xl hover:text-tuwei-purple transition-colors duration-300 animate-bounce-slow" style="animation-delay: 1s">
+                    <i class="fa fa-qq"></i>
+                </a>
+                <a href="#" class="text-tuwei-yellow text-2xl hover:text-tuwei-red transition-colors duration-300 animate-bounce-slow" style="animation-delay: 1.5s">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+            </div>
+            <p class="text-white/70 text-sm">
+                © 2025 土味情话大全 | 老铁双击666 | 本页面仅供娱乐，请勿当真
+            </p>
+            <p class="text-white/50 text-xs mt-2">
+                制作不易，点赞关注不迷路，爱你们哟 ❤️
+            </p>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-tuwei-red hover:bg-tuwei-red/80 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300 opacity-0 invisible">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
     <script>
-        // 为了让页面更“活”，我们用JS做一个假的访客计数器
-        let count = 12345;
-        const countElement = document.getElementById('visitor-count');
-        setInterval(() => {
-            // 每次随机增加1到3个访客，显得更真实
-            count += Math.floor(Math.random() * 3) + 1;
-            countElement.innerText = count;
-        }, 2000); // 每2秒增加一次访客
+        // 土味情话数组
+        const loveQuotes = [
+            "你知道我最喜欢吃什么水果吗？是你这个开心果！",
+            "我觉得你特别像一款游戏。什么游戏？我的世界！",
+            "遇到你之后，我再也没吃过糖了。为什么？因为你太甜了！",
+            "你知道我想成为什么人吗？你的人！",
+            "我最近有点忙。忙什么？忙着喜欢你！",
+            "你有打火机吗？没有啊。那你是怎么点燃我的心的？",
+            "我觉得你今天有点怪。哪里怪？怪好看的！",
+            "遇到你之后，我再也没吃过糖了。为什么？因为你太甜了！",
+            "你知道我最喜欢喝什么酒吗？和你的天长地久！",
+            "我想买一块地。什么地？你的死心塌地！",
+            "你知道我最喜欢什么神吗？你的眼神！",
+            "我觉得你有点过分了。过分好看了！",
+            "你知道我最喜欢什么花吗？有钱花和随便花！",
+            "我最近体重增加了。因为我心里装了一个你！",
+            "你知道我最喜欢什么季节吗？有你的季节！"
+        ];
+
+        // 元素获取
+        const nextQuoteBtn = document.getElementById('next-quote');
+        const loveQuoteElement = document.getElementById('love-quote');
+        const likeBtn = document.getElementById('like-btn');
+        const likeCount = document.getElementById('like-count');
+        const commentBtn = document.getElementById('comment-btn');
+        const commentCount = document.getElementById('comment-count');
+        const shareBtn = document.getElementById('share-btn');
+        const shareCount = document.getElementById('share-count');
+        const commentSection = document.getElementById('comment-section');
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        // 初始计数
+        let likes = 666;
+        let comments = 88;
+        let shares = 99;
+
+        // 换一句情话
+        nextQuoteBtn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * loveQuotes.length);
+            loveQuoteElement.textContent = loveQuotes[randomIndex];
+            // 添加动画效果
+            loveQuoteElement.classList.add('animate-shake');
+            setTimeout(() => {
+                loveQuoteElement.classList.remove('animate-shake');
+            }, 500);
+        });
+
+        // 点赞功能
+        likeBtn.addEventListener('click', () => {
+            likes += Math.floor(Math.random() * 10) + 1;
+            likeCount.textContent = likes;
+            // 添加动画效果
+            likeBtn.classList.add('animate-shake');
+            likeCount.classList.add('text-tuwei-red', 'animate-flash');
+            setTimeout(() => {
+                likeBtn.classList.remove('animate-shake');
+                likeCount.classList.remove('text-tuwei-red', 'animate-flash');
+            }, 500);
+            // 显示提示
+            showNotification('感谢老铁点赞！');
+        });
+
+        // 评论功能
+        commentBtn.addEventListener('click', () => {
+            comments += Math.floor(Math.random() * 5) + 1;
+            commentCount.textContent = comments;
+            // 切换评论区显示
+            commentSection.classList.toggle('hidden');
+            if (!commentSection.classList.contains('hidden')) {
+                commentSection.querySelector('textarea').focus();
+            }
+        });
+
+        // 分享功能
+        shareBtn.addEventListener('click', () => {
+            shares += Math.floor(Math.random() * 3) + 1;
+            shareCount.textContent = shares;
+            // 添加动画效果
+            shareBtn.classList.add('animate-shake');
+            setTimeout(() => {
+                shareBtn.classList.remove('animate-shake');
+            }, 500);
+            // 显示提示
+            showNotification('分享成功，老铁真给力！');
+        });
+
+        // 回到顶部
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 通知提示
+        function showNotification(message) {
+            // 创建通知元素
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-20 left-1/2 transform -translate-x-1/2 bg-tuwei-yellow text-black font-bold py-3 px-6 rounded-full shadow-xl z-50 opacity-0 transition-opacity duration-300';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            // 显示通知
+            setTimeout(() => {
+                notification.classList.add('opacity-100');
+            }, 10);
+
+            // 隐藏通知
+            setTimeout(() => {
+                notification.classList.remove('opacity-100');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 2000);
+        }
+
+        // 页面加载完成后执行
+        window.addEventListener('load', () => {
+            // 随机显示一句情话
+            const randomIndex = Math.floor(Math.random() * loveQuotes.length);
+            loveQuoteElement.textContent = loveQuotes[randomIndex];
+            
+            // 显示欢迎通知
+            setTimeout(() => {
+                showNotification('欢迎来到土味情话大全！');
+            }, 1000);
+        });
     </script>
 </body>
 </html>
